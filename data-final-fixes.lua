@@ -1,5 +1,5 @@
 local function has_value(tab, val)
-    for index, value in ipairs(tab) do
+    for _, value in ipairs(tab) do
         if value == val then
             return true
         end
@@ -8,18 +8,16 @@ local function has_value(tab, val)
     return false
 end
 
-for k, wall in pairs(data.raw["wall"]) do
-    if (string.find(wall.name, "wall")) then
-        if (wall.flags) and (not has_value(wall.flags, "not-repairable")) then
-            table.insert(wall.flags, "not-repairable")
+local function add_not_repairable_flag(prototypes)
+    if not prototypes then return end
+
+    for _, prototype in pairs(prototypes) do
+        prototype.flags = prototype.flags or {}
+        if not has_value(prototype.flags, "not-repairable") then
+            table.insert(prototype.flags, "not-repairable")
         end
     end
 end
 
-for k, wall in pairs(data.raw["gate"]) do
-    if (string.find(wall.name, "gate")) then
-        if (wall.flags) and (not has_value(wall.flags, "not-repairable")) then
-            table.insert(wall.flags, "not-repairable")
-        end
-    end
-end
+add_not_repairable_flag(data.raw["wall"])
+add_not_repairable_flag(data.raw["gate"])

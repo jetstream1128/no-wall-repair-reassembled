@@ -1,29 +1,8 @@
 ---------------------------------------------------------------------------------------------------
-Version: 0.0.4
-Date:  28.03.2020
-  Major Features:
-    - Update to Factorio 1.1
-    - Fix for walls not repairing if placed when damaged
-    - Wall repair delay & repair speed are now adjustable via map settings
-    - Gates are now considered walls as well
-
----------------------------------------------------------------------------------------------------
-Version: 0.0.3
-Date:  28.03.2020
-  Major Features:
-    - Update to Factorio 0.18
----------------------------------------------------------------------------------------------------
-Version: 0.0.2
-Date:  05.04.2019
-  Fixes:
-    - UPS issue with large attacks fixed
-    - removed some unnecessary debug logging!
-    - limited update rate so it should never become a performance hit even when 1000's of walls are being damaged
-
-  Balance:
-    - Early game walls will take a bit longer to start repairing and repair slower
----------------------------------------------------------------------------------------------------
-Version: 0.0.1
-Date:  05.04.2019
-  Major Features:
-    - Initial release, disables repair for all walls. Walls get a small amount of self-healing.
+Version: 0.0.5
+Date:  04.07.2026
+  Changes:
+    - Updated compatibility for Factorio 2.1
+    - Updated runtime storage and build event handling for Factorio 2.x
+    - Added event filters for wall and gate events
+    - Credited Pawz777 as the original mod creator and linked the original repository
