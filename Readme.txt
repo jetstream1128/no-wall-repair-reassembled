@@ -9,3 +9,8 @@ Original mod by Pawz777:
 https://github.com/Pawz777/no-wall-repair
 
 This reassembled version updates the mod metadata and runtime script for Factorio 2.x compatibility while keeping the original behavior.
+
+Build a Factorio release zip:
+.\build-release.ps1
+or
+powershell -ExecutionPolicy Bypass -File .\build-release.ps1
