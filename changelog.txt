@@ -5,4 +5,5 @@ Date:  04.07.2026
     - Updated compatibility for Factorio 2.1
     - Updated runtime storage and build event handling for Factorio 2.x
     - Added event filters for wall and gate events
+    - Renamed the mod to No Wall Repair Reassembled
     - Credited Pawz777 as the original mod creator and linked the original repository

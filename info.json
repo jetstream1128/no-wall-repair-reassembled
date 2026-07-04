@@ -1,8 +1,8 @@
 {
-    "name": "no-wall-repair",
+    "name": "no-wall-repair-reassembled",
     "version": "0.0.5",
     "factorio_version": "2.1",
-    "title": "No Wall Repair",
+    "title": "No Wall Repair Reassembled",
     "author": "Pawz777",
     "homepage": "https://github.com/Pawz777/no-wall-repair",
     "dependencies": [
